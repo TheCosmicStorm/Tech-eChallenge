@@ -2011,7 +2011,64 @@ input, select, textarea {
 		}
 
 /* Icon */
-
+	
+	.hoverImageTable {
+		border: hidden;
+	}
+	
+	#hoverImageTable2 {
+		padding: 0em 3em 0em 3em;
+	}
+	
+	.hoverImageContainer {
+		position: relative;
+		top: 20%;
+		left: 0%;
+		background-color: black;
+	}
+	
+	.hoverImage {
+		opacity: 1;
+		display: block;
+		max-width: 23vw;
+		height: auto;
+		transition: 1.5s ease;
+		backface-visibility: hidden;
+	}
+		
+	.hoverImageMiddle {
+		transition: 1s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+		
+	.hoverImageContainer:hover .hoverImage {
+		opacity: 0.1;
+	}
+		
+	.hoverImageContainer:hover .hoverImageMiddle {
+		opacity: 1;
+	}
+		
+	.hoverImageText {
+		color: white;
+		padding: 16px 32px;
+		font-weight: 800;
+		letter-spacing: 0.225em;
+		font-size: 2.3em;
+		line-height: 1em;
+	}
+	.hoverImageText2 {
+		color: white;
+		font-weight: 100;
+	}
+	
+	
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -2040,12 +2097,12 @@ input, select, textarea {
 			line-height: 3em;
 			text-align: center;
 			width: calc(8em + 2px);
-			background-color: #727272;
+			background-color: #FFFFFF;
 			color: #000000;
 		}
 		
 		.icon.major:hover {
-			background-color: #3F3F3F;
+			background-color: #D3D3D3;
 		}
 
 			.icon.major:before {
@@ -2341,8 +2398,7 @@ input, select, textarea {
 			color: #fff;
 			font-size: 0.9em;
 			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
@@ -2775,7 +2831,8 @@ input, select, textarea {
 
 		.wrapper > .inner {
 			width: 60em;
-			margin: 0 auto;
+			margin-left: 12.5%;
+			margin-right: 25%;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -2807,17 +2864,16 @@ input, select, textarea {
 		}
 		
 		.underlay {
-			background-color: #141C1E;
-			opacity: 0.9;
+			background-color: #444444;
+			opacity: 0.75;
 		}
-		
 
 			.wrapper.style1 strong, .wrapper.style1 b {
 				color: #ffffff;
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #FFFFFF;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 hr {
@@ -2914,11 +2970,11 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: transparent;
 				}
 
 			.wrapper.style1 table th {
-				color: #ffffff;
+				color: #000000;
 			}
 
 			.wrapper.style1 table thead {
@@ -3582,7 +3638,14 @@ input, select, textarea {
 			}
 
 /* Banner */
-
+	#aboveOverlay {
+		background-color: #000000;
+		width: 100%;
+		height: 100vh;
+		margin-top: -100vh;
+		position: absolute;
+		opacity: 0.55;
+	}
 	#banner {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3905,6 +3968,10 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 	
+	.danceTable th{
+		background-color: transparent
+	}
+	
 	.logo {
 		position: absolute;
 		background-image: url(../../images/logo.png);
@@ -3923,7 +3990,7 @@ input, select, textarea {
 	
 	#innerOneDiv {
 		position: absolute;
-		margin-top: 54px;
+		margin-top: 60px;
 	}
 
 /* Footer */

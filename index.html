@@ -17,6 +17,7 @@
 				<div href="./index.html" class="logo" width="10em" style="cursor: pointer;" onclick=window.location="./index.html";></div>
 				<div class="wrap">
 				</div>
+				<div id="aboveOverlay"></div>
 				<video autoplay muted loop id="fullscreen">
 				<source src="./Images/rain.mp4" type="video/mp4">
 				</video>
@@ -52,26 +53,36 @@
 					
 				<!-- One -->
 				<div id="innerOneDiv"></div>
-					<section id="one" class="wrapper style1 special minimumHeight underlay">
+					<section id="one" class="wrapper style1 special minimumHeightCancel underlay">
 						<div class="inner">
 							<header class="major">
 								<h2>Find your next dance step in under 10 minutes<br/></h2>
 							</header>
-							<ul class="icons major">
-								<li><a href="./categories.html"><span class="icon major style1">Explore<span class="label"></span></span></a></li>
-								<li><a href="./tutorials.html"><span class="icon major style2">Learn<span class="label">Ipsum</span></span></a></li>
-								<li><a href="./submitVideo.html"><span class="icon major style3">Contribute<span class="label">Dolor</span></span></a></li>
-							</ul>
-							<header class="major">
-							<table class="danceTable">
+							<table class="hoverImageTable">
 								<tr>
-									<th>Different Dance categories and dance videos uploaded by people around the world</th>
-									<th>From the best choreographers and academics around the world.</th> 
-									<th>By adding your own dance videos and dance tutorials for the world to se</th>
+									<th><div class="hoverImageContainer">
+										<a href="./categories.html"><img src="images/learn.jpg" class="hoverImage">
+										<div class="hoverImageMiddle">
+											<div class="hoverImageText">&nbsp&nbsp&nbsp&nbspLEARN&nbsp&nbsp&nbsp&nbsp</div>
+											<div class="hoverImageText2">Different Dance categories and videos uploaded by people around the world!</div>
+										</div></a>
+									</div></th>
+									<th id="hoverImageTable2"><div class="hoverImageContainer">
+										<a href="./Tutorials.html"><img src="images/explore.png" class="hoverImage">
+										<div class="hoverImageMiddle">
+											<div class="hoverImageText">&nbsp&nbsp&nbspEXPLORE&nbsp&nbsp&nbsp</div>
+											<div class="hoverImageText2">From the best choreographers and academics around the world!</div>
+										</div></a>
+									</div></th> 
+									<th><div class="hoverImageContainer">
+										<a href="./submitVideo.html"><img src="images/contribute.png" class="hoverImage">
+										<div class="hoverImageMiddle">
+											<div class="hoverImageText">CONTRBIUTE</div>
+											<div class="hoverImageText2">By adding your own dance videos and tutorials for the world to see!</div>
+										</div></a>
+									</div></th>
 								</tr>
 							</table>
-							</header>
-							
 						</div>
 					</section>
 
